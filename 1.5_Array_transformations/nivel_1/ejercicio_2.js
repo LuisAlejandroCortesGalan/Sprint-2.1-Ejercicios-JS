@@ -1,7 +1,8 @@
-// Operador Rest en Funcions: Crea una funció 'suma' que utilitzi l'operador rest per a acceptar un nombre indeterminat d'arguments i retornar la seva suma.
+// Filter: Teniu una array de números [1, 2, 3, 4]. Crea una nova array que només contingui els números parells.
 
-function suma(...args) {
-    return args.reduce((acc, curr) => acc + curr, 0);
-}
 
-console.log(suma(1, 2, 3, 4, 5)); // 15
+let numeros = [1, 2, 3, 4];
+
+let pares = numeros.filter(numero => numero % 2 === 0);
+
+console.log("pares", pares, "numeros", numeros);
